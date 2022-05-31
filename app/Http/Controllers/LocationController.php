@@ -10,7 +10,7 @@ class LocationController extends Controller
 {
     public function getLocations (ListLocationsRequest $request) {
         $point = new Point($request->input('latitude'), $request->input('longitude'));
-        $rows = Location::whereDistanceSphere('position', $point, '<', $request->input('radius'))
+        $rows = Location::whereDistanceSphere('position', $point, '<=', $request->input('radius'))
             ->withDistanceSphere('position', $point)
             ->orderByDistanceSphere('position', $point)
             ->get();

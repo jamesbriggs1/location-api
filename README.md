@@ -5,7 +5,7 @@ This repo contains a Laravel app implementing an API for listing locations.
 ## Pre-requisites
 
 * PHP 8
-* MySQL
+* MySQL (5.7+, supporting the spatial convenience functions)
 
 ## Setup
 
