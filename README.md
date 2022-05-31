@@ -12,7 +12,7 @@ This repo contains a Laravel app implementing an API for listing locations.
 1. Configure `.env` with the DB connection settings
 1. Run DB migrations `php artisan migrate`
 1. Seed DB with sample location data `php artisan db:seed --class=LocationSeeder`
-1. Run app and make an HTTP request `GET http://localhost/api/v1/locations?latitude=n&longitude=n&radius=2`
+1. Run app and make an HTTP request `GET http://localhost/api/v1/locations?latitude=52.088850856128&longitude=-2.0610554621947&radius=5000`
 
 ## API format
 
